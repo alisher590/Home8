@@ -1,4 +1,5 @@
 ﻿Console.Clear();
+try{
 int InputInt(string output)
 {
     Console.Write(output);
@@ -55,3 +56,7 @@ PrintArray(matrixB);
 Console.WriteLine();
 Console.WriteLine("Произведение матриц А*В");
 PrintArray(matrixC);
+}
+catch(Exception exc){
+    Console.WriteLine($"Error text:: {exc.Message}");
+}
